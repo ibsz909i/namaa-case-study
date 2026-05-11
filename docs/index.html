@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NAMAA engineering case study for a local loyalty and merchant rewards product.">
+  <title>NAMAA | Engineering Case Study</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="NAMAA home">
+        <span>N</span>
+        <strong>NAMAA</strong>
+      </a>
+      <nav aria-label="Case study navigation">
+        <a href="#product">Product</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#code">Code</a>
+        <a href="#scope">Scope</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Engineering case study</p>
+          <h1>NAMAA</h1>
+          <p class="lead">A mobile-first local loyalty platform designed around customer rewards, merchant operations, POS-aware redemption, local discovery, and PostgreSQL-backed product workflows.</p>
+          <div class="actions">
+            <a class="button" href="https://apps.apple.com/us/app/namaa-loyalty-rewards/id6762251888">View on App Store</a>
+            <a class="button" href="https://github.com/ibsz909i/namaa-case-study#readme">Read the README</a>
+            <a class="button secondary" href="https://github.com/ibsz909i/namaa-case-study/blob/main/samples/personalization-scoring.js">View sample logic</a>
+          </div>
+        </div>
+
+        <aside class="system-card" aria-label="NAMAA product system summary">
+          <div class="system-title">
+            <span>Product system</span>
+            <strong>Customer + Merchant + Admin</strong>
+          </div>
+          <div class="system-row">
+            <span>Customer</span>
+            <strong>Discovery, wallet, rewards, QR/barcode redemption</strong>
+          </div>
+          <div class="system-row">
+            <span>Merchant</span>
+            <strong>Store setup, promotions, loyalty tools, POS-aware workflows</strong>
+          </div>
+          <div class="system-row">
+            <span>Backend</span>
+            <strong>Service workflows, SQL, PostgreSQL, authentication, authorization</strong>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap metric-grid" aria-label="Case study highlights">
+      <article>
+        <strong>3-sided product</strong>
+        <span>Customer, merchant, and admin workflows designed together.</span>
+      </article>
+      <article>
+        <strong>POS-aware</strong>
+        <span>Clover and Square integration boundaries planned for redemption and transaction workflows.</span>
+      </article>
+      <article>
+        <strong>Mobile-first</strong>
+        <span>QR/barcode redemption, wallet state, merchant detail pages, and responsive UI.</span>
+      </article>
+      <article>
+        <strong>Code evidence</strong>
+        <span>Runnable SQL and JavaScript samples with tests for review.</span>
+      </article>
+      <article>
+        <strong>App Store</strong>
+        <span>Production app reference available for NAMAA Loyalty Rewards.</span>
+      </article>
+    </section>
+
+    <section id="product" class="wrap section">
+      <p class="eyebrow">Product</p>
+      <h2>Local rewards marketplace, not just a points screen.</h2>
+      <div class="content-grid">
+        <article class="card">
+          <h3>Customer experience</h3>
+          <p>Customers need a fast path from discovery to redemption: find a nearby merchant, understand the offer, view wallet eligibility, and redeem with a QR or barcode flow.</p>
+        </article>
+        <article class="card">
+          <h3>Merchant tools</h3>
+          <p>Merchants need store setup, promotion management, loyalty configuration, customer engagement, and operational workflows that connect to checkout behavior.</p>
+        </article>
+        <article class="card">
+          <h3>Admin review</h3>
+          <p>Admin workflows support merchant onboarding, review states, data quality, and operational readiness before stores appear in customer-facing surfaces.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="architecture" class="wrap section">
+      <p class="eyebrow">Architecture</p>
+      <h2>Clean product boundaries for a multi-sided platform.</h2>
+      <div class="architecture">
+        <div class="lane">
+          <span>Mobile UI</span>
+          <strong>React, TypeScript, responsive flows, QR/barcode UX</strong>
+        </div>
+        <div class="connector"></div>
+        <div class="lane">
+          <span>Service layer</span>
+          <strong>Authentication, authorization, redemption, wallet, offer, and merchant workflows</strong>
+        </div>
+        <div class="connector"></div>
+        <div class="lane">
+          <span>Data layer</span>
+          <strong>PostgreSQL, SQL modeling, transaction history, eligibility, and review states</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="engineering" class="wrap section">
+      <p class="eyebrow">Engineering</p>
+      <h2>What employers should notice.</h2>
+      <div class="content-grid">
+        <article class="card">
+          <h3>Backend and data workflows</h3>
+          <p>Structured product flows around wallet state, merchant eligibility, redemption events, admin review, SQL data integrity, and PostgreSQL-backed product behavior.</p>
+        </article>
+        <article class="card">
+          <h3>POS integration planning</h3>
+          <p>Integration boundaries for Clover and Square, including merchant identity, transaction references, retry behavior, and redemption verification.</p>
+        </article>
+        <article class="card">
+          <h3>Ranking and personalization</h3>
+          <p>Discovery needs ranking logic that can balance distance, offer value, customer interest, merchant activity, and recency. The sample in this repo shows the idea with fake data.</p>
+        </article>
+        <article class="card">
+          <h3>QA and release thinking</h3>
+          <p>Redemption and merchant flows require practical QA: loading states, route state, wallet correctness, issue documentation, and regression checks around checkout behavior.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="code" class="wrap section">
+      <p class="eyebrow">Code snapshots</p>
+      <h2>Runnable samples that show the engineering work.</h2>
+      <div class="content-grid">
+        <article class="card">
+          <h3>PostgreSQL schema</h3>
+          <p>Example tables, constraints, relationships, idempotency keys, and indexes for merchants, offers, wallets, redemptions, and POS events.</p>
+          <a class="text-link" href="https://github.com/ibsz909i/namaa-case-study/blob/main/samples/schema.sql">Open schema.sql</a>
+        </article>
+        <article class="card">
+          <h3>Redemption state machine</h3>
+          <p>Controlled reward lifecycle sample covering created, presented, verified, redeemed, expired, and rejected states with invalid transition protection.</p>
+          <a class="text-link" href="https://github.com/ibsz909i/namaa-case-study/blob/main/samples/redemption-state-machine.js">Open redemption sample</a>
+        </article>
+        <article class="card">
+          <h3>POS event normalization</h3>
+          <p>Clover and Square-style payment events normalized into one internal transaction shape before idempotency and reward handling.</p>
+          <a class="text-link" href="https://github.com/ibsz909i/namaa-case-study/blob/main/samples/pos-event-normalizer.js">Open POS sample</a>
+        </article>
+        <article class="card">
+          <h3>Ranking and tests</h3>
+          <p>Fake merchant ranking logic plus Node tests for personalization, POS normalization, and redemption flow behavior.</p>
+          <a class="text-link" href="https://github.com/ibsz909i/namaa-case-study/blob/main/samples/personalization-scoring.js">Open ranking sample</a>
+          <a class="text-link" href="https://github.com/ibsz909i/namaa-case-study/tree/main/tests">Open tests</a>
+        </article>
+      </div>
+      <div class="note">
+        <strong>Review path:</strong>
+        <span>Read <a href="https://github.com/ibsz909i/namaa-case-study/blob/main/docs/code-snapshots.md">code-snapshots.md</a>, then run <code>npm test</code> from the repository root.</span>
+      </div>
+    </section>
+
+    <section id="scope" class="wrap section scope">
+      <p class="eyebrow">Interview scope</p>
+      <h2>What I can walk through.</h2>
+      <p>I can discuss the product decisions, data modeling, redemption states, POS integration boundaries, UI behavior, and the sample code included here. I keep credentials, customer and merchant records, partner configuration, live endpoints, and production source code out of this repository.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>NAMAA engineering case study</p>
+      <span>Product architecture and code samples</span>
+    </div>
+  </footer>
+</body>
+</html>

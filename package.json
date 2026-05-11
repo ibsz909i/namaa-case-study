@@ -1,0 +1,12 @@
+{
+  "name": "namaa-case-study",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Engineering case study for NAMAA.",
+  "scripts": {
+    "test": "node tests/personalization-scoring.test.js && node tests/redemption-state-machine.test.js && node tests/pos-event-normalizer.test.js",
+    "demo:ranking": "node samples/personalization-scoring.js",
+    "demo:redemption": "node samples/redemption-state-machine.js",
+    "demo:pos": "node samples/pos-event-normalizer.js"
+  }
+}
